@@ -172,7 +172,7 @@ a{
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
@@ -249,7 +249,8 @@ a{
 .input-group .input{
     border: 0;
     flex-grow: 1;
-    padding: 1.5 2rem;
+    padding: 1.5rem 2rem;
+    width: 0;
 }
 .input-group .btn{
     margin: 4px;
@@ -311,9 +312,6 @@ a{
 .plan .list__item{
     margin-bottom: 2rem;
 }
-.plan--popular{
-    transform: scale(1.1);
-}
 .plan--popular .card__header{
     position: relative;
 }
@@ -336,6 +334,9 @@ a{
 .plan__price{
     font-size: 5rem;
 }
+.plan--popular {
+    transform: scale(1.1);
+  }
 .plan__billing-cycle{
     font-size: 1.6rem;
 }
@@ -615,8 +616,9 @@ a{
     max-width: 670px;
 }
 .block-domain__prices{
+    color: var(--color-heading);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -704,7 +706,6 @@ a{
     text-align: center;
 }
 .footer__brand img{
-    /* TODO: Consider Refactoring this and reapplying it to all images */
     width: 100%;
     max-width: 230px;
 }
@@ -737,4 +738,8 @@ a{
     .footer__heading{
         font-size: 1.6rem;
     }
+}
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
 }

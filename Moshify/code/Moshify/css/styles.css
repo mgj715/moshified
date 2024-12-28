@@ -794,6 +794,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .feature{
+    margin: 1rem;
+  }
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
